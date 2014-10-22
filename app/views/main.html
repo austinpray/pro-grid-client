@@ -16,13 +16,10 @@
         <h2>Users Online</h2>
         <strong class="ui-big-text">{{ meta.numUsers }}</strong>
       </div>
-      <div class="ui-widget">
+      <div class="ui-widget" ng-click="refreshColor()">
         <h2>You</h2>
         <figure class="ui-color-example" ng-style="{'background-color': user.color }"></figure>
         <strong>{{ user.name }}</strong>
-      </div>
-      <div class="ui-widget">
-        <button ng-click="refreshColor()">Refresh color</button>
       </div>
     </div>
     </div>
